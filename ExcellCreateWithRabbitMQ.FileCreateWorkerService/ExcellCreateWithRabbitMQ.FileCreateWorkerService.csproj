@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ExcellCreateWithRabbitMQ.FileCreateWorkerService-ecee227e-cbed-45c7-af77-87a48a2f69f1</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.95.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.36" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.36">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.36" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExcellCreateWithRabbitMQ.Shared\ExcellCreateWithRabbitMQ.Shared.csproj" />
+  </ItemGroup>
+</Project>
